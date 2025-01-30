@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="notekeeper.NoteKeeperController">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notekeeper.NoteKeeperController">
     <children>
         <TableView fx:id="tableNotes" layoutX="20" layoutY="20" prefHeight="300" prefWidth="400">
             <columns>
@@ -17,8 +17,8 @@
             </columns>
         </TableView>
 
-        <Label layoutX="20" layoutY="340" text="Selected Note:" />
-        <Label fx:id="lblNoteContent" layoutX="333.0" layoutY="326.0" text="(Click a note to view)" />
+        <Label layoutX="20" layoutY="340" text="Selected Note:" visible="false" />
+        <Label fx:id="lblNoteContent" layoutX="333.0" layoutY="326.0" text="(Click a note to view)" visible="false" />
 
         <TextField fx:id="txtTitle" layoutX="450" layoutY="20" promptText="Title" />
         <TextArea fx:id="txtContent" layoutX="450" layoutY="50" prefHeight="150" promptText="Write your note..." />
