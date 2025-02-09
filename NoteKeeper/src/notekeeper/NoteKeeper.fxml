@@ -8,23 +8,23 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notekeeper.NoteKeeperController">
+<AnchorPane prefHeight="394.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notekeeper.NoteKeeperController">
     <children>
-        <TableView fx:id="tableNotes" layoutX="20" layoutY="20" prefHeight="300" prefWidth="400">
+        <TableView fx:id="tableNotes" layoutX="20.0" layoutY="35.0" prefHeight="300" prefWidth="400">
             <columns>
                 <TableColumn fx:id="colTitle" prefWidth="200" text="Note Title" />
                 <TableColumn fx:id="colDate" prefWidth="180" text="Updated Date" />
             </columns>
         </TableView>
 
-        <Label layoutX="20" layoutY="340" text="Selected Note:" visible="false" />
-        <Label fx:id="lblNoteContent" layoutX="333.0" layoutY="326.0" text="(Click a note to view)" visible="false" />
+        <Label layoutX="20.0" layoutY="355.0" text="Selected Note:" visible="false" />
+        <Label fx:id="lblNoteContent" layoutX="333.0" layoutY="341.0" text="(Click a note to view)" visible="false" />
 
-        <TextField fx:id="txtTitle" layoutX="450" layoutY="20" promptText="Title" />
-        <TextArea fx:id="txtContent" layoutX="450" layoutY="50" prefHeight="150" promptText="Write your note..." />
+        <TextField fx:id="txtTitle" layoutX="450.0" layoutY="18.0" promptText="Title" />
+        <TextArea fx:id="txtContent" layoutX="450.0" layoutY="65.0" prefHeight="150" prefWidth="725.0" promptText="Write your note..." />
 
-        <Button fx:id="btnAdd" layoutX="450" layoutY="220" onAction="#addNote" text="Add Note" />
-        <Button fx:id="btnUpdate" layoutX="603.0" layoutY="220.0" onAction="#updateNote" text="Update Note" />
-        <Button fx:id="btnDelete" layoutX="770.0" layoutY="220.0" onAction="#deleteNote" text="Delete Note" />
+        <Button fx:id="btnAdd" layoutX="450.0" layoutY="235.0" onAction="#addNote" text="Add Note" />
+        <Button fx:id="btnUpdate" layoutX="603.0" layoutY="235.0" onAction="#updateNote" text="Update Note" />
+        <Button fx:id="btnDelete" layoutX="770.0" layoutY="235.0" onAction="#deleteNote" text="Delete Note" />
     </children>
 </AnchorPane>
